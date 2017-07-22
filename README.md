@@ -1,24 +1,7 @@
+# TWITTER CLONE
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This app is my second attempt at Rails, this time using scaffolding and gems (namely Devise and Carrierwave). The app is supposed to function as a clone of the early version of Twitter.
 
+## Updates
 
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://microblog-arencrg.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+As of 21 Jul 2017, I've finished the basic functionality of the app -- Signing up and logging in, updating the user's profile, deleting an account, assigning tweets to specific users, and uploading an avatar. I've yet to create the design, but the basics are there. I hope to add a tweet counter and to be able to arrange the tweets properly for my next update, and of course the design.
