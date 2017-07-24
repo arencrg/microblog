@@ -6,8 +6,10 @@
 </p>
 
 <p>
-  <strong>Post:</strong>
+  <strong>Tweet:</strong>
   <%= @tweet.post %>
+  <br/>
+  <small><%= @tweet.created_at %></small>
 </p>
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |

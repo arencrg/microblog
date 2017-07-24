@@ -17,7 +17,6 @@ class User < ActiveRecord::Base
   validates_integrity_of    :avatar
   validates_processing_of   :avatar
   
-  
   attr_accessor :login
   
       def self.find_for_database_authentication(warden_conditions)

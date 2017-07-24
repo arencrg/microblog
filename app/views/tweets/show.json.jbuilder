@@ -1,1 +1,1 @@
-json.partial! "tweets/tweet", tweet: @tweet
+json.partial! "/username", current_user: @username
