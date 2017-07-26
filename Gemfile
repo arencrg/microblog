@@ -17,6 +17,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+gem 'actionview'
+gem 'time_ago_in_words'
 
 gem 'bootstrap'
 gem 'autoprefixer-rails'

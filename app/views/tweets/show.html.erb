@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>User:</strong>
-  <%= current_user.username %>
+  <%= image_tag @tweet.user.avatar%> <br/>
+  <%= @tweet.user.username %>
 </p>
 
 <p>
@@ -12,5 +12,8 @@
   <small><%= @tweet.created_at %></small>
 </p>
 
-<%= link_to 'Edit', edit_tweet_path(@tweet) %> |
+<% if @tweet.user.username == current_user.username %>
+<%= button_to "destroy", @tweet, :method => :delete %>  
+<% end %>  
+
 <%= link_to 'Back', tweets_path %>

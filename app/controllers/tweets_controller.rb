@@ -38,13 +38,14 @@ class TweetsController < ApplicationController
 
   # DELETE /tweets/1
   # DELETE /tweets/1.json
-  def destroy
-    @tweet.destroy
-    respond_to do |format|
-      format.html { redirect_to tweets_url, notice: 'Tweet was successfully destroyed.' }
-      format.json { head :no_content }
+
+def destroy
+    @tweet = Tweet.find(params[:id])
+    if @tweet.present?
+      @tweet.destroy
     end
-  end
+    redirect_to root_url
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.

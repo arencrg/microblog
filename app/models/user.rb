@@ -28,11 +28,7 @@ class User < ActiveRecord::Base
       end
       end  
       
-  validates :username,
-  :presence => true,
-  :uniqueness => {
-  :case_sensitive => false
-  }
+  validates :username, :presence => true, :uniqueness => {:case_sensitive => false}
   
   validate :validate_username
 
