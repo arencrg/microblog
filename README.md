@@ -11,6 +11,10 @@ As of 24 Jul 2017 | I've been able to add a better navbar, format the tweets bet
 
 As of 25 Jul 2017 | I've temporarily hit pause on this project to work on an Instagram Clone -- https://github.com/arencrg/instaclone
 
+
 ## To-do
 
-- the design (CSS)
+- crop images into squares (so that they can be displayed as circles, like in the current, rounder Twitter)
+- the design (CSS) -- I've been putting this off for so long, hahaha
+- following/followers, and probably a Tweet counter
+- Log in with Facebook (OmniAuth)

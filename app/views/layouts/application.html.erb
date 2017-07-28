@@ -21,30 +21,28 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
-        <a class="navbar-brand" href="#"><img src "/public/twitter.png"></a>
+       <%= link_to 'TWITTER', tweets_path %>
       </button>
-      <a class="navbar-brand" href="#">Twitter</a>
+      <%= link_to 'TWITTER', tweets_path %>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">New</span></li>
         <li><%= link_to 'Home', tweets_path %></li>
         <% if user_signed_in? %>
-            <li> <%= link_to 'Settings', edit_user_registration_path, :class => 'navbar-link' %></li>
+            <li><%= link_to 'Settings', edit_user_registration_path, :class => 'navbar-link' %> </li>
             <li> <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> </li>
           <% else %>
             <li>  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %>  </li>
             <li>  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>  </li>
           <% end %>
         </li>
-        
-
       </ul>
     </div>
   </div>
 </nav>
 
-        
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
@@ -52,7 +50,28 @@
     
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}  
+
+function maxLength(el) {	
+	if (!('maxLength' in el)) {
+		var max = el.attributes.maxLength.value;
+		el.onkeypress = function () {
+			if (this.value.length >= max) return false;
+		};
+	}
+}
+
+maxLength(document.getElementById("newtweet"));
+
+    </script>
     
 </body>
 </html>

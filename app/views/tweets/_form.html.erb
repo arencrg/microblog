@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field" id="entertweet">
-    <%= f.text_area :post %>
+    <%= f.text_area :post, id: "newtweet", maxlength: 140 %>
   </div>
   <button type="button" class="actions" id="tweetthis">
     <%= f.submit %>

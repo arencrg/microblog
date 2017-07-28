@@ -14,7 +14,3 @@
 = require jquery_ujs
 = require turbolinks
 = require_tree  .
-
-$("#showModal").click(function(){
-    $('#pageopen').modal();
-});
