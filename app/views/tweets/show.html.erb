@@ -1,19 +1,24 @@
+<div class="container" id="showtweet">
 <p id="notice"><%= notice %></p>
 
-<p>
-  <%= image_tag @tweet.user.avatar%> <br/>
-  <%= @tweet.user.username %>
-</p>
+<div class="row">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <%= image_tag @tweet.user.avatar%> 
+  </div>
+  <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+    <h2>@<%= @tweet.user.username %></h2>
+    <hr>
+    <h3><%= @tweet.post %></h3>
+    <br/>
+    <small>Tweeted <%= time_ago_in_words(@tweet.created_at, include_seconds: true)  %> ago</small>
+    <br/>
 
-<p>
-  <strong>Tweet:</strong>
-  <%= @tweet.post %>
-  <br/>
-  <small><%= @tweet.created_at %></small>
-</p>
+    <% if @tweet.user.username == current_user.username %>
+    <hr>
+      <%= button_to "Delete Tweet", @tweet, :method => :delete , :class => 'destroyit'%>  
+    <% end %> 
+  </div>
+</div>
 
-<% if @tweet.user.username == current_user.username %>
-<%= button_to "destroy", @tweet, :method => :delete %>  
-<% end %>  
 
-<%= link_to 'Back', tweets_path %>
+</div>

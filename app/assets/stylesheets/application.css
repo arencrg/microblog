@@ -8,17 +8,28 @@ html {
    -webkit-font-smoothing: antialiased;
 }
 
+#logo {
+    width: 45px;
+    padding-top: 8px;
+}
+
+#contentcol {
+    padding: 10px 20px 50px 20px;
+}
+
 .navbar {
-   background: #657786 ;
-   color: white;
+   background: #f5f8fa ;
+   color: #14171a;
+   height: 60px;
 }
 
 .navbar a {
    text-decoration: none;
-   color: white;
+   color: #14171a;
+   font-size: 20px;
 }
 .navbar a:hover, a:active {
-   color: #14171a;
+   color: #1da1f2;
 }
 
 .sidenav {
@@ -28,7 +39,7 @@ html {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #aab8c2;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -49,57 +60,49 @@ html {
     color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 200px;
-    left: 25px;
-    font-size: 60px;
-    margin-right: 50px;
+.closebtn {
+    padding-top: 80%;
+    font-size: 100px;
 }
 
-#mySidenavedit .sidenav {
-    height: 100%;
-    color: white;
-    font-size: 24px;
-    line-height: 30px;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+.field, .actions, .sharedlinks, .form {
     display: inline-block;
     text-align: center;
 }
-
-#mySidenavedit a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
+.entertext {
+    width: 80%;
+}
+.newtweet {
+    padding: 10px 20px 10px 20px;
+}
+.entertweet {
+    width: 100% !important;
+}
+#tweetbody {
+    width: 90% !important;
 }
 
-#mySidenavedit a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+.submitit, .destroyit {
+    width: 30%;
+    right: 0;
+    padding: 10px 10px 10px 10px;
+    bottom: 80px;
 }
 
-#mySidenavedit .closebtnedit {
-    bottom: 60px;
-    font-size: 60px;
-    margin-right: 50px;
+#loginform, #signupform, #editaccountform {
+    display: inline-block;
+    text-align: center;
+    padding-top: 30px;
 }
 
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+#tweetscol {
+    padding: 0 0 0 0;
 }
 
+#tweetthing {
+    padding: 0 0 0 0;
+    width: 100%;
+}
 
 #avatar {
    width: 100%;
@@ -127,9 +130,21 @@ html {
     height: auto;
 }
 
+#sup {
+    padding-bottom: 30px;
+}
+
 #tweetthis {
     right: 0;
 }
 #entertweet {
     width: 600px;
+}
+
+.dropdown {
+    right: 0;
+}
+
+#showtweet {
+    padding: 20px 20px 20px 20px;
 }

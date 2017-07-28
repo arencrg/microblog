@@ -1,20 +1,20 @@
-<%= form_for(@tweet=Tweet.new) do |f| %>
-  <% if @tweet.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
-
-      <ul>
-      <% @tweet.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<div class="newtweet">
+<div class="row">
+<h3>What's happening, <%=current_user.username%>?</h3>
+    <%= form_for(@tweet=Tweet.new) do |f| %>
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="field" id="tweetbody">
+        <%= f.text_area :post, maxlength: 140, :class => 'entertweet' %>
+      </div>
     </div>
-  <% end %>
-
-  <div class="field" id="entertweet">
-    <%= f.text_area :post, id: "newtweet", maxlength: 140 %>
+    </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <%= f.submit 'Tweet!', :class => 'submitit'%>
+    </div>
   </div>
-  <button type="button" class="actions" id="tweetthis">
-    <%= f.submit %>
-  </button>
+    
 <% end %>
+</div>
+</div>
