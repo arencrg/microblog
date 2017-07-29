@@ -148,3 +148,11 @@ html {
 #showtweet {
     padding: 20px 20px 20px 20px;
 }
+
+#showtweetavatar {
+    width: 100%;
+}
+
+.formfield {
+  width: 500px;
+}
