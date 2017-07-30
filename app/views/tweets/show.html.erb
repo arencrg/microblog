@@ -15,7 +15,7 @@
 
     <% if @tweet.user.username == current_user.username %>
     <hr>
-      <%= button_to "Delete Tweet", @tweet, :method => :delete , :class => 'destroyit'%>  
+      <%= button_to "Delete Tweet", @tweet, :method => :delete , :class => 'buttontweet'%>  
     <% end %> 
   </div>
 </div>

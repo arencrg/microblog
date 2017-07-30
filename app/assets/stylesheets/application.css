@@ -82,13 +82,6 @@ html {
     width: 90% !important;
 }
 
-.submitit, .destroyit {
-    width: 30%;
-    right: 0;
-    padding: 10px 10px 10px 10px;
-    bottom: 80px;
-}
-
 #loginform, #signupform, #editaccountform {
     display: inline-block;
     text-align: center;
@@ -155,4 +148,25 @@ html {
 
 .formfield {
   width: 500px;
+}
+
+.buttonupdate {
+  width: 100px;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+  background: #1da1f2;
+  display: inline-block;
+  text-align: center;
+}
+
+.buttontweet {
+
+  width: 200px;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+  background: #1da1f2;
+  display: inline-block;
+  text-align: center;
 }
