@@ -42,6 +42,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do  # Added development group.
   gem 'sqlite3'
 end
+
 group :production do  # Added postgres and made it production only.
  gem 'pg', '0.18.4'
  gem 'rails_12factor'
