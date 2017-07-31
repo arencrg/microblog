@@ -3,14 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use sqlite3 as the database for Active Record
-
-group :development, :test do
-  gem 'sqlite3', '1.3.13'
-end
-
-gem 'pg', group: :production
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,6 +38,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+
+group :development, :test do  # Added development group.
+  gem 'sqlite3'
+end
+group :production do  # Added postgres and made it production only.
+ gem 'pg'
+end # Added postgres and made it production only.
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
