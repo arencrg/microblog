@@ -11,8 +11,9 @@ As of 24 Jul 2017 | I've been able to add a better navbar, format the tweets bet
 
 As of 25 Jul 2017 | I've temporarily hit pause on this project to work on an Instagram Clone -- https://github.com/arencrg/instaclone
 
+As of 27 Jul 2017 | I've put this and the IG clone on hold to work on a few new projects. Might come back to this eventually.
+
 ## To-do (eventually)
 
-- the design (CSS) -- I've been putting this off for so long, hahaha
 - following/followers, and probably a Tweet counter
 - Log in with Facebook (OmniAuth)

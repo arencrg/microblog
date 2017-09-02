@@ -17,7 +17,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'actionview'
 gem 'time_ago_in_words'
-
+gem 'rails_db'
 gem 'bootstrap'
 gem 'autoprefixer-rails'
 
